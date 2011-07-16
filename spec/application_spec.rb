@@ -3,6 +3,7 @@ ENV['RACK_ENV'] = 'test'
 require 'application'
 require 'rspec'
 require 'rack/test'
+require_relative 'helper'
 
 describe Application do
   include Rack::Test::Methods
