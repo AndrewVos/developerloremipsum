@@ -6,7 +6,7 @@ require File.join(File.dirname(__FILE__), 'configuration')
 class Application < Sinatra::Base
   get '/?' do
     content = []
-    1.upto(Random.rand(10)+5) do
+    1.upto(5) do
       paragraph = []
       1.upto(Random.rand(10)+5) do
         paragraph << SentenceGenerator.generate
