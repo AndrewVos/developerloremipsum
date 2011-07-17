@@ -15,7 +15,12 @@ class SentenceGenerator
     end
 
     def article
-      ["the", "a", "one", "some", "any"].shuffle.first
+      [
+        "the", "a", "one", "some", "any",
+        "specific", "designated", "compiled",
+        "selected", "verified", "established",
+        "elected", "exclusive", "assorted"
+      ].shuffle.first
     end
 
     def noun
